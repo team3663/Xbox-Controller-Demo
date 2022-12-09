@@ -54,12 +54,12 @@ public class RobotContainer {
                 .whenPressed(new PrintCommand("Button A (" + Button.kA.value + ") whenPressed >>>"))
                 .whileHeld(new PrintCommand(" Button A (" + Button.kA.value + ") whileHeld..."))
                 .whenReleased(new PrintCommand("  Button A (" + Button.kA.value + ") whenReleased <<<"));
-        
+
         new JoystickButton(m_drivController, Button.kB.value)
                 .whenPressed(new PrintCommand("Button B (" + Button.kB.value + ") whenPressed >>>"))
                 .whileHeld(new PrintCommand(" Button B (" + Button.kB.value + ") whileHeld..."))
                 .whenReleased(new PrintCommand("  Button B (" + Button.kB.value + ") whenReleased <<<"));
-        
+
         new JoystickButton(m_drivController, Button.kX.value)
                 .whenPressed(new PrintCommand("Button X (" + Button.kX.value + ") whenPressed >>>"))
                 .whileHeld(new PrintCommand(" Button X (" + Button.kX.value + ") whileHeld..."))
@@ -99,9 +99,7 @@ public class RobotContainer {
                 .whenPressed(new PrintCommand("Button RightStick (" + Button.kRightStick.value + ") whenPressed >>>"))
                 .whileHeld(new PrintCommand(" Button RightStick (" + Button.kRightStick.value + ") whileHeld..."))
                 .whenReleased(new PrintCommand("  Button RightStick (" + Button.kRightStick.value + ") whenReleased <<<"));
-
     }
-
 
     /**
      * Use this to pass the autonomous command to the main {@link Robot} class.
